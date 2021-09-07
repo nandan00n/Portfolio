@@ -1,0 +1,392 @@
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  /* height: 500px; */
+  background-color: rgb(255, 255, 255);
+  /* border: 2px solid red; */
+}
+
+.hero {
+  background-color: #1c1d25;
+  opacity: 5;
+  z-index: -1;
+  height: 100vh;
+  color: white;
+  font-size: 30px;
+}
+
+.hero {
+  /* background: url(../img/bg.jpg); */
+  background: url(../img/bg2.jpg);
+  width: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-list a:hover {
+  color: rgb(4, 160, 100);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+li {
+  /* width: 200px; */
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-area .hero-text {
+    width: auto;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  ul li a {
+    font-size: 30px;
+    margin: 5px;
+    padding-right: 2px;
+  }
+  .sub-section h2 {
+    font-size: 30px;
+  }
+  .sub-section-alt h2 {
+    /* height: 500px; */
+    font-size: 30px;
+  }
+  #contact-me h2 {
+    font-size: 40px;
+  }
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skills img {
+    width: 87px;
+    margin: 15px;
+    height: auto;
+  }
+  #font-size {
+    font-size: 30px;
+  }
+}
+
+ul.show {
+  display: block;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.project-link {
+  font-size: 20px;
+}
+
+.hero-area {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  margin-left: 50px;
+  margin-bottom: 200px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(65, 128, 223);
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: rgb(4, 160, 100);
+}
+
+.button:active {
+  background-color: rgb(8, 209, 182);
+  color: #1d1d25;
+}
+
+.socials {
+  padding: 20px;
+  margin-bottom: 220px;
+}
+
+/* .circle {
+  background: rgba(15, 28, 63, 0.125);
+  border-radius: 50%;
+  height: 8em;
+  object-fit: cover;
+  width: 8em;
+} */
+.socials a svg:hover {
+  background-color: rgb(4, 160, 100);
+  border-radius: 50%;
+  /* width: 52px;
+  height: 50px; */
+  /* position: absolute; */
+}
+
+.logo {
+  margin: 10px;
+  height: 90px;
+}
+
+.social {
+  margin: 20px;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  /* border:2px solid chartreuse; */
+}
+
+@media only screen and (max-width: 522px) {
+  .info h2 {
+    font-size: 30px;
+    margin-left: 25px;
+  }
+  p {
+    font-size: 25px;
+    margin-left: 45px;
+  }
+  .headshot-container .headshot {
+    width: 120px;
+    border-radius: 50%;
+  }
+
+  .hero-area .hero-text {
+    width: auto;
+  }
+  p {
+    margin: 0;
+  }
+  ul li a {
+    font-size: 20px;
+    margin: 1px;
+    padding-right: 0px;
+  }
+  .button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(65, 128, 223);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px 0;
+    padding-bottom: 5px;
+  }
+
+  /* .sub-section-alt2 h2 {
+    font-size: 30px;
+  } */
+
+  #contact-me h2 {
+    font-size: 35px;
+  }
+  #contact-me p {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+.sub-section-alt2 h2 {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+.sub-section-alt h2 {
+  font-size: 50px;
+}
+
+.sub-section-alt2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+
+.skills-container {
+  /* height: 500px; */
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  justify-content: space-around;
+}
+
+.skills-container .icon {
+  width: 100px;
+  height: auto;
+  display: flex;
+}
+/* 
+#skills img {
+  width: 87px;
+  height: auto;
+} */
+/* @media only screen and (max-width: 1000px) {
+  .sub-section-alt2 .skills-container {
+    width: auto;
+    height: auto;
+  } */
+/* #boot{
+  margin-left:400px;
+} */
+
+p {
+  font-size: 25px;
+}
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.headshot {
+  width: 300px;
+  /* height: 250px; */
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-card {
+  justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 12px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project-img {
+  margin: 10px;
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: royalblue;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger:focus {
+  outline: none;
+}
+
+@media only screen and (max-with: 1000px) {
+  .hamburger {
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border: 0;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    background-color: turquoise;
+    margin: 0px;
+  }
+  ul.show {
+    display: flex;
+  }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+footer {
+  background-color: rgb(29, 29, 37);
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+
+@media only screen and (max-width: 380px) {
+  ul li a {
+    font-size: 16px;
+    margin: 1px;
+    padding-right: 1px;
+  }
+}
