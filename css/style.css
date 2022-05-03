@@ -46,7 +46,6 @@ ul {
 }
 
 li {
-  /* width: 200px; */
   text-decoration: none;
 }
 
@@ -126,24 +125,23 @@ ul.show {
   margin-bottom: 200px;
 }
 
+
 .button {
-  width: 150px;
-  height: 50px;
+  width: 10vw !important;
+  height: 7.2vh;
   border-radius: 30px;
   background-color: rgb(65, 128, 223);
   text-align: center;
   cursor: pointer;
   font-weight: 400;
-  margin: 20px;
+  margin: 30px;
+  border: none;
+  text-decoration: none;
 }
 
 .button:hover {
   background-color: rgb(4, 160, 100);
-}
-
-.button:active {
-  background-color: rgb(8, 209, 182);
-  color: #1d1d25;
+  color: white;
 }
 
 .socials {
@@ -152,14 +150,8 @@ ul.show {
   
 }
 
-/* .social div{
-  display: flex;
-  justify-items: space-around;
-} */
-
-
 .socials a svg:hover {
-  background-color: rgb(4, 160, 100);
+  background-color: rgb(255, 35, 35);
   border-radius: 50%;
 }
 
@@ -177,7 +169,18 @@ ul.show {
   display: flex;
   justify-content: space-around;
   padding: 80px;
-  /* border:2px solid chartreuse; */
+}
+
+.sub-section > .info{
+  margin-top: 26vh;
+}
+
+.exp{
+  color: red;
+}
+ 
+.designation > span{
+  color: rgb(26, 96, 248);
 }
 
 @media only screen and (max-width: 522px) {
@@ -196,7 +199,7 @@ ul.show {
     font-size: 25px;
     margin-left: 45px;
   }
-  .headshot-container .headshot {
+  .headshot-container >img {
     width: 140px;
     border-radius: 50%;
   }
@@ -229,10 +232,6 @@ ul.show {
     padding-bottom: 5px;
   }
 
-  /* .sub-section-alt2 h2 {
-    font-size: 30px;
-  } */
-
   #contact-me h2 {
     font-size: 35px;
   }
@@ -257,11 +256,12 @@ a {
   flex-direction: column;
   height: 100vh;
   text-align: center;
-  margin-top: 1rem;
-  /* padding: 40px; */
+
 }
+
 .sub-section-alt h2 {
   font-size: 50px;
+  margin-top: 10vh;
 }
 
 .sub-section-alt2 {
@@ -269,7 +269,6 @@ a {
   flex-direction: column;
   height: 100vh;
   text-align: center;
-
   padding: 40px;
 }
 
@@ -286,19 +285,6 @@ a {
   height: auto;
   display: flex;
 }
-/* 
-#skills img {
-  width: 87px;
-  height: auto;
-} */
-/* @media only screen and (max-width: 1000px) {
-  .sub-section-alt2 .skills-container {
-    width: auto;
-    height: auto;
-  } */
-/* #boot{
-  margin-left:400px;
-} */
 
 p {
   font-size: 25px;
@@ -330,10 +316,9 @@ p {
 }
 
 .project-container {
-  margin-top: 100px;
+  margin-top: 15vh;
   display: flex;
   flex-wrap: wrap;
-  /* height: 500px; */
   justify-content: space-around;
 }
 
@@ -362,24 +347,9 @@ hr {
   color: royalblue;
 }
 
-.hamburger {
-  display: none;
-}
-.hamburger:focus {
-  outline: none;
-}
 
 @media only screen and (max-with: 1000px) {
-  /* .hamburger {
-    display: block;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    border: 0;
-    margin: 20px;
-    align-self: flex-end;
-  } */
+
   ul {
     display: none;
     background-color: turquoise;
