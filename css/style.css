@@ -18,15 +18,17 @@ section {
   height: 100vh;
   color: white;
   font-size: 30px;
-}
-
-.hero {
-  /* background: url(../img/bg.jpg); */
   background: url(../img/bg2.jpg);
   width: 100%;
   opacity: 1;
   z-index: 1;
 }
+
+.navbar{
+  height: 10vh;
+  position: sticky;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -86,7 +88,7 @@ p {
   #contact-me h2 {
     font-size: 40px;
   }
-  #skills {
+  #skills1 {
     display: flex;
     flex-wrap: wrap;
   }
@@ -146,22 +148,19 @@ ul.show {
 
 .socials {
   padding: 20px;
-  margin-bottom: 220px;
+ margin-bottom: 220px;
+  
 }
 
-/* .circle {
-  background: rgba(15, 28, 63, 0.125);
-  border-radius: 50%;
-  height: 8em;
-  object-fit: cover;
-  width: 8em;
+/* .social div{
+  display: flex;
+  justify-items: space-around;
 } */
+
+
 .socials a svg:hover {
   background-color: rgb(4, 160, 100);
   border-radius: 50%;
-  /* width: 52px;
-  height: 50px; */
-  /* position: absolute; */
 }
 
 .logo {
@@ -174,6 +173,7 @@ ul.show {
 }
 
 .sub-section {
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   padding: 80px;
@@ -181,17 +181,28 @@ ul.show {
 }
 
 @media only screen and (max-width: 522px) {
-  .info h2 {
-    font-size: 30px;
-    margin-left: 25px;
+  .sub-section-alt h2 {
+    margin-top: 150px;
   }
+  .info h2 {
+    font-size: 39px;
+    margin-left: 20px;
+  }
+  .info p{
+     margin-top:150px;
+  }
+  
   p {
     font-size: 25px;
     margin-left: 45px;
   }
   .headshot-container .headshot {
-    width: 120px;
+    width: 140px;
     border-radius: 50%;
+  }
+
+  .headshot {
+    margin-top: 100px;
   }
 
   .hero-area .hero-text {
@@ -232,6 +243,7 @@ ul.show {
 }
 
 .sub-section-alt2 h2 {
+  margin-top: 1rem;
   font-size: 50px;
 }
 
@@ -243,8 +255,10 @@ a {
 .sub-section-alt {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   text-align: center;
-  padding: 40px;
+  margin-top: 1rem;
+  /* padding: 40px; */
 }
 .sub-section-alt h2 {
   font-size: 50px;
@@ -253,16 +267,18 @@ a {
 .sub-section-alt2 {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   text-align: center;
+
   padding: 40px;
 }
 
 .skills-container {
-  /* height: 500px; */
-  margin-top: 100px;
+  height: 300px;
+  margin-top: 120px;
   display: grid;
   grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .skills-container .icon {
@@ -306,14 +322,18 @@ p {
 
 .project-card {
   justify-content: space-evenly;
-  width: 300px;
-  height: 300px;
+  width: 19.53vw;
+  height: 40.21vh;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin: 12px;
+  border-radius: 8px;
 }
 
 .project-container {
+  margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
+  /* height: 500px; */
   justify-content: space-around;
 }
 
@@ -321,6 +341,7 @@ p {
   .project-container {
     display: flex;
     flex-wrap: wrap;
+    /* height: 400px; */
   }
 }
 
@@ -349,7 +370,7 @@ hr {
 }
 
 @media only screen and (max-with: 1000px) {
-  .hamburger {
+  /* .hamburger {
     display: block;
     background-color: transparent;
     color: white;
@@ -358,7 +379,7 @@ hr {
     border: 0;
     margin: 20px;
     align-self: flex-end;
-  }
+  } */
   ul {
     display: none;
     background-color: turquoise;
@@ -379,11 +400,12 @@ hr {
 footer {
   background-color: rgb(29, 29, 37);
   color: white;
+  height: 250px;
   text-align: center;
   padding: 60px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   ul li a {
     font-size: 16px;
     margin: 1px;
