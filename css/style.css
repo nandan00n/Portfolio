@@ -27,23 +27,31 @@ section {
 }
 
 .navbar {
-  height: 10vh;
-  position: sticky;
+  height: 5vh;
+  /* display: inline-block; */
+  display: flex;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
+.navbar > img {
+  background-color: rgb(0, 58, 128);
+  border-radius: 50%;
+  align-content: center;
+/* width: vw; */
+height: 7vh;
 }
 
 #nav-list a:hover {
   color: rgb(4, 160, 100);
 }
 
+ul li a{
+  margin: 1vw;
+}
+
 ul {
   display: flex;
   list-style-type: none;
-  width: 500px;
+  width: auto;
   justify-content: space-evenly;
 }
 
@@ -77,9 +85,13 @@ p {
   }
 
   ul li a {
-    font-size: 30px;
-    margin: 5px;
+    font-size: 1.5rem;
+    margin: 1vw;
     padding-right: 2px;
+  }
+
+  .socials , .hero-text{
+    margin-top: 25vh;
   }
 
   .sub-section h2 {
@@ -141,7 +153,7 @@ ul.show {
   width: 20vw !important;
   height: 7.2vh;
   border-radius: 30px;
-  background-color: rgb(65, 128, 223);
+  background-color: rgb(0, 58, 128);
   text-align: center;
   cursor: pointer;
   font-weight: 400;
@@ -263,8 +275,8 @@ ul.show {
   }
 
   ul li a {
-    font-size: 20px;
-    margin: 1px;
+    font-size: 1.5rem;
+    margin: 1vw;
     padding-right: 0px;
   }
 
@@ -272,7 +284,7 @@ ul.show {
     width: 100px;
     height: 30px;
     border-radius: 30px;
-    background-color: rgb(65, 128, 223);
+    background-color: rgb(0, 58, 128);
     text-align: center;
     cursor: pointer;
     font-size: 20px;
@@ -474,6 +486,8 @@ footer {
     align-items: center;
   }
 
+ 
+
   .sub-section {
     /* margin-top: auto; */
     padding: 20px;
@@ -518,12 +532,13 @@ footer {
   }
 
   #project {
-    margin-top: 55vh;
+    margin-top: 20vh;
   }
 
   ul li a {
-    font-size: 16px;
-    margin: 1px;
+    font-size: 1.1rem;
+    margin: 1vw;
     padding-right: 1px;
   }
 }
+
