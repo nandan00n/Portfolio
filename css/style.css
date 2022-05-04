@@ -2,9 +2,11 @@ body {
   font-family: "Oswald", sans-serif;
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 section {
   /* height: 500px; */
   background-color: rgb(255, 255, 255);
@@ -24,7 +26,7 @@ section {
   z-index: 1;
 }
 
-.navbar{
+.navbar {
   height: 10vh;
   position: sticky;
 }
@@ -68,34 +70,42 @@ p {
   .hero-area .hero-text {
     width: auto;
   }
+
   h1 {
     font-size: 50px;
     margin: 0;
   }
+
   ul li a {
     font-size: 30px;
     margin: 5px;
     padding-right: 2px;
   }
+
   .sub-section h2 {
     font-size: 30px;
   }
-  .sub-section-alt h2 {
+
+  .sub-section-alt > h2 {
     /* height: 500px; */
-    font-size: 30px;
+    font-size: 1rem;
   }
+
   #contact-me h2 {
     font-size: 40px;
   }
+
   #skills1 {
     display: flex;
     flex-wrap: wrap;
   }
+
   #skills img {
     width: 87px;
     margin: 15px;
     height: auto;
   }
+
   #font-size {
     font-size: 30px;
   }
@@ -120,6 +130,7 @@ ul.show {
   align-items: center;
   justify-content: space-between;
 }
+
 .hero-text {
   margin-left: 50px;
   margin-bottom: 200px;
@@ -127,7 +138,7 @@ ul.show {
 
 
 .button {
-  width: 10vw !important;
+  width: 20vw !important;
   height: 7.2vh;
   border-radius: 30px;
   background-color: rgb(65, 128, 223);
@@ -146,8 +157,8 @@ ul.show {
 
 .socials {
   padding: 20px;
- margin-bottom: 220px;
-  
+  margin-bottom: 220px;
+
 }
 
 .socials a svg:hover {
@@ -171,54 +182,92 @@ ul.show {
   padding: 80px;
 }
 
-.sub-section > .info{
+.sub-section>.info {
   margin-top: 26vh;
+  /* font-size: 1rem; */
 }
 
-.exp{
+.info>h2 {
+  font-size: 3rem;
+}
+
+.info> {
+  font-size: 1rem;
+}
+
+.exp {
   color: red;
 }
- 
-.designation > span{
+
+.designation{
+  font-size: 1.8rem;
+}
+
+.designation>span {
   color: rgb(26, 96, 248);
 }
 
-@media only screen and (max-width: 522px) {
-  .sub-section-alt h2 {
-    margin-top: 150px;
+@media only screen and (max-width: 540px) {
+
+  .sub-section {
+    height: auto;
   }
+
+  .sub-section>.info {
+    margin-top: 8vh;
+  }
+
+  .sub-section-alt {
+    margin-top: 10vh;
+    height: auto;
+  }
+
+  .sub-section-alt>h2 {
+    height: auto;
+    /* font-size: 2rem; */
+  }
+
   .info h2 {
     font-size: 39px;
     margin-left: 20px;
   }
-  .info p{
-     margin-top:150px;
+
+  .info p {
+    margin-top: 10vh;
   }
-  
+
+  .sub-section-alt2 {
+    height: auto;
+  }
+
   p {
     font-size: 25px;
     margin-left: 45px;
   }
-  .headshot-container >img {
+
+  /* .headshot-container >img {
     width: 140px;
     border-radius: 50%;
   }
 
   .headshot {
     margin-top: 100px;
-  }
+  } */
 
   .hero-area .hero-text {
     width: auto;
   }
+
   p {
     margin: 0;
   }
+
   ul li a {
     font-size: 20px;
     margin: 1px;
     padding-right: 0px;
   }
+
   .button {
     width: 100px;
     height: 30px;
@@ -235,6 +284,7 @@ ul.show {
   #contact-me h2 {
     font-size: 35px;
   }
+
   #contact-me p {
     font-size: 20px;
     margin: 5px;
@@ -243,7 +293,7 @@ ul.show {
 
 .sub-section-alt2 h2 {
   margin-top: 1rem;
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 a {
@@ -256,11 +306,10 @@ a {
   flex-direction: column;
   height: 100vh;
   text-align: center;
-
 }
 
-.sub-section-alt h2 {
-  font-size: 50px;
+.sub-section-alt > h2 {
+  font-size: 2rem;
   margin-top: 10vh;
 }
 
@@ -289,13 +338,14 @@ a {
 p {
   font-size: 25px;
 }
+
 .subtext {
   font-size: 15px;
   font-weight: 300;
 }
 
 .headshot {
-  width: 300px;
+  width: 20vw;
   /* height: 250px; */
   border-radius: 50%;
   margin-left: 25px;
@@ -313,20 +363,58 @@ p {
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin: 12px;
   border-radius: 8px;
-}
-
-.project-container {
-  margin-top: 15vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.project-container {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 1000px) {
+
+  .headshot-container>img {
+    width: 28vw;
+    border-radius: 50%;
+  }
+
+  .headshot {
+    margin-top: 100px;
+  }
+
+  /* .sub-section-alt2 {
+    height:100vh;
+  } */
+
+  .sub-section-alt {
+    height: auto;
+    margin-bottom: 5vh;
+  }
+
+  .sub-section-alt>h2 {
+    margin-top: 30vh;
+  }
+
   .project-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+  }
+
+  .project-card {
+    justify-content: space-evenly;
+    width: 40.53vw;
+    height: 41.21vh;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 12px;
+    border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
-    /* height: 400px; */
+    justify-content: space-around;
   }
 }
 
@@ -355,13 +443,16 @@ hr {
     background-color: turquoise;
     margin: 0px;
   }
+
   ul.show {
     display: flex;
   }
+
   nav {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .logo {
     display: none;
   }
@@ -375,7 +466,61 @@ footer {
   padding: 60px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 432px) {
+
+  .headshot-container {
+    /* display: flex; */
+    margin-top: 15vh;
+    align-items: center;
+  }
+
+  .sub-section {
+    /* margin-top: auto; */
+    padding: 20px;
+  }
+
+  .sub-section>.info {
+    margin-top: 8vh;
+  }
+
+  .designation {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+  }
+
+  .info>h2 {
+    font-size: 2rem;
+    text-align: right;
+  }
+
+    .sub-section-alt {
+    margin-top: 100px;
+  }
+
+  .sub-section-alt > h2{ 
+    font-size: 2rem;
+   }
+  
+ #skills > h2 {
+    font-size: 2rem ;
+   }
+
+   .project-card {
+    justify-content: space-evenly;
+    width: 45.53vw;
+    height: 33.21vh;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #project {
+    margin-top: 55vh;
+  }
+
   ul li a {
     font-size: 16px;
     margin: 1px;
