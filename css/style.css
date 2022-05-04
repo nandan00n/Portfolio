@@ -301,6 +301,18 @@ ul.show {
     font-size: 20px;
     margin: 5px;
   }
+
+    .project-card {
+    justify-content: space-evenly;
+    width: 40.53vw;
+    height: 37.21vh !important;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .sub-section-alt2 h2 {
@@ -420,7 +432,7 @@ p {
   .project-card {
     justify-content: space-evenly;
     width: 40.53vw;
-    height: 41.21vh;
+    height: 48.21vh;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 12px;
     border-radius: 8px;
@@ -432,9 +444,10 @@ p {
 
 .project-img {
   margin: 10px;
-  width: 280px;
+  /* width: 280px; */
   height: auto;
   border-radius: 5px;
+  /* width: 90%; */
 }
 
 hr {
@@ -486,8 +499,6 @@ footer {
     align-items: center;
   }
 
- 
-
   .sub-section {
     /* margin-top: auto; */
     padding: 20px;
@@ -507,9 +518,9 @@ footer {
     text-align: right;
   }
 
-    .sub-section-alt {
+    /* .sub-section-alt {
     margin-top: 100px;
-  }
+  } */
 
   .sub-section-alt > h2{ 
     font-size: 2rem;
@@ -532,7 +543,7 @@ footer {
   }
 
   #project {
-    margin-top: 20vh;
+    margin-top: 30vh;
   }
 
   ul li a {
